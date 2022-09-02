@@ -1,0 +1,38 @@
+.container-content{
+    background-color: #FFF8;
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
+    width: 100vw;
+    font-size: 1.2rem;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.detail-container h1{
+    text-align: center;
+    
+}
+
+.detail-container p{
+    display: inline-block;
+}
+
+.container-content button{
+    margin: 0 10px;
+    float: right;
+}
+.container-content button a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 758px) {
+    .container-content{
+        background-color: #FFF8;
+        grid-column: span 2;
+        width: 50vw;
+        font-size: 1.2rem;
+        
+    }
+}

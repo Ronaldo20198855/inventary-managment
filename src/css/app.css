@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    user-select: none;
+    color: #eee;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
+    grid-template-areas: 
+    "nav nav"
+    "main main"
+    "footer footer";
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 62%, rgba(206,230,231,1) 86%, rgba(110,173,210,1) 100%);
+    min-height: 100vh;
+    min-width:  300px;
+}
+
+.nav-content{
+ grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .page{
+        grid-template-rows: 60px 1fr auto;
+    }
+    .nav-content{
+        max-height: 60px;
+    }
+}

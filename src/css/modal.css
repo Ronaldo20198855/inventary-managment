@@ -1,0 +1,50 @@
+.overlay{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container{
+    width: 500px;
+    min-height: 100px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgb(100, 100, 111, .2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+.modal-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #e8e8e8;
+}
+
+.modal-head h3{
+    font-weight: 500;
+    font-size: 16px;
+    color: #1766DC;
+}
+.btn-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-danger a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn-danger a:hover{
+    color: #fff;
+}

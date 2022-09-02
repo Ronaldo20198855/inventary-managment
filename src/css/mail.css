@@ -1,0 +1,11 @@
+.email-container{
+    grid-column:  span 2;
+    width: 400px;
+    min-width: 300px;
+    align-self: center;
+    justify-self: center;
+    border: solid thin #eee;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+

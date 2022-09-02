@@ -1,0 +1,24 @@
+.container-404{
+    grid-column: span 2;
+    width: 80vw;
+    height: 65vh;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-404 h1{
+    color: #222;
+    font-size: 30vw;
+}
+
+.text-404{
+    font-size: 2vw;
+}
+
+.text-404 .btn a{
+    color: #FFF;
+    text-decoration: none;
+}

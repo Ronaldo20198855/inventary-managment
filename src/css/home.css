@@ -1,0 +1,87 @@
+main{
+    grid-area: main;
+    text-align: center;
+    
+}
+.image{
+    background-image: url('../../public/img/heroImg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #eee;
+    background-repeat: no-repeat;
+    grid-column:  span 2;
+}
+.image div{
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.708);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image h2{
+    font-weight: 5vw;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column; 
+    margin: 50px 0;   
+}
+.flex-container img{
+    max-width: 180px;
+    height: auto;
+}
+.article-text{
+    order: 1;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    
+    .image  h2{
+        font-size: 7vw;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+        border: solid .5px #eee;
+    }
+
+    .flex-item{
+        flex-flow: 0 0 50%;
+        padding: 20px;
+    }
+    .flex-order-1{
+        order: 1;
+    }
+
+    .search{
+        grid-column: span 2;
+        flex-direction: column;
+    }
+    .add{
+        grid-column: span 2;
+        flex-direction: column;
+    }
+    .delete, .edit{
+        font-size: 14px;
+        justify-self: center;
+        text-align: center;
+    }
+    .delete h2, .edit h2{
+        font-size: 18px;
+    }
+    .delete img, .edit img{
+        width: 7vw;
+    }
+}
