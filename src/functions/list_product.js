@@ -39,7 +39,7 @@ async function getData() {
 
             $category.classList.add('categoria')
             $title.classList.add('titulo')
-            $title.classList.add('pb-5',)
+            $title.classList.add('mb-5',)
             $card.classList.add('transition','text-center', 'border','bg-light', 'm-5','p-4', 'producto')
             $card.setAttribute('data-id', el._id);
             

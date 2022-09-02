@@ -1,6 +1,5 @@
 .addForm{
     width: 100vw;
-    height: 60vh;
     padding: 20px 50px;
     text-align: center;
     justify-self: center;
@@ -13,7 +12,6 @@
 @media screen and (min-width: 758px) {
     .addForm{
         width: 50vw;
-        height: 45vh;
         padding: 30px 70px;
     }
 }
